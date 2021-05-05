@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FoodCell" id="rAJ-ts-DfP" customClass="FoodCell" customModule="FoodList" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="103" height="126"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="yIt-hd-jQi">
+                <rect key="frame" x="0.0" y="0.0" width="103" height="126"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image1" translatesAutoresizingMaskIntoConstraints="NO" id="ooD-Ud-1Iv">
+                        <rect key="frame" x="10" y="10" width="80" height="80"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="80" id="D2V-wc-AnR"/>
+                            <constraint firstAttribute="width" constant="80" id="VpN-q9-jSg"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Food Name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VID-qu-9I3">
+                        <rect key="frame" x="0.0" y="100" width="100" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="VID-qu-9I3" firstAttribute="centerX" secondItem="ooD-Ud-1Iv" secondAttribute="centerX" id="58q-CL-Ed6"/>
+                    <constraint firstItem="ooD-Ud-1Iv" firstAttribute="top" secondItem="yIt-hd-jQi" secondAttribute="top" constant="10" id="9ny-UB-Fbb"/>
+                    <constraint firstAttribute="trailing" secondItem="VID-qu-9I3" secondAttribute="trailing" id="AAN-EW-nSz"/>
+                    <constraint firstItem="VID-qu-9I3" firstAttribute="leading" secondItem="yIt-hd-jQi" secondAttribute="leading" id="RiX-tw-s5B"/>
+                    <constraint firstItem="VID-qu-9I3" firstAttribute="top" secondItem="ooD-Ud-1Iv" secondAttribute="bottom" constant="10" id="S1k-es-hU1"/>
+                    <constraint firstItem="ooD-Ud-1Iv" firstAttribute="leading" secondItem="yIt-hd-jQi" secondAttribute="leading" constant="10" id="jgc-ng-mGf"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="103" height="126"/>
+            <connections>
+                <outlet property="foodImage" destination="ooD-Ud-1Iv" id="fhV-ha-CrF"/>
+                <outlet property="foodName" destination="VID-qu-9I3" id="doT-um-FMb"/>
+            </connections>
+            <point key="canvasLocation" x="92.028985507246389" y="74.330357142857139"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Image1" width="100" height="100"/>
+    </resources>
+</document>
